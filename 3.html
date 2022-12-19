@@ -30,12 +30,23 @@
             display:grid;
             grid-template-columns: 150px 1fr;
         }
+        #cat {
+            padding-left:20px;
+            padding-right:20px;
+        }
         #grid ol {
             padding-left:32px;
         }
-        #grid #cat {
-            padding-left:20px;
-            padding-right:20px;
+        @media(max-width:700px) {
+            #grid {
+            display:block;
+            }
+            ol {
+            border-right:none;
+            }
+            h1 {
+                border-bottom:none;
+            }
         }
     </style>
 </head>
