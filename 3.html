@@ -3,20 +3,59 @@
 <head>
     <title>cat - munchkin</title>
     <meta charset="utf-8">
+    <style>
+        h1 {
+            font-size:80px;
+            text-decoration:none;
+            text-align:center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px;
+        }
+        ol {
+            border-right:1px solid gray;
+            width:100px;
+            margin:0;
+            padding:20px;
+            text-align:center;
+        }
+        body {
+            margin:0;
+        }
+        a {
+            text-decoration:none;
+            color:black;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol {
+            padding-left:32px;
+        }
+        #grid #cat {
+            padding-left:20px;
+            padding-right:20px;
+        }
+    </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">뚱이</a></li>
-        <li><a href="2.html">강아지</a></li>
-        <li><a href="3.html">고양이</a></li>
-    </ol>
-    <p><h2>고양이 - munchkin</h2></p>
-    <p>Munchkin, also known as Sausage Cat is a breed of cat characterized by its very short legs, which are caused by genetic mutation. Compared to many other cat breeds, it is a relatively new breed, documented since 1940s[1] and officially recognized in 1991.[2] The Munchkin is considered to be the original breed of dwarf cat.
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" class="saw">뚱이</a></li>
+            <li><a href="2.html">강아지</a></li>
+            <li><a href="3.html">고양이</a></li>
+        </ol>
+        <div id="cat">
+            <h2>고양이 - munchkin</h2>
+            <p>Munchkin, also known as Sausage Cat is a breed of cat characterized by its very short legs, which are caused by genetic mutation. Compared to many other cat breeds, it is a relatively new breed, documented since 1940s[1] and officially recognized in 1991.[2] The Munchkin is considered to be the original breed of dwarf cat.
 
         Much controversy erupted over the breed when it was recognized by The International Cat Association (TICA) in 1997 with critics voicing concerns over potential health and mobility issues.[3] Many pedigree cat associations around the world have refused to recognize the Munchkin cat due to the welfare of the breed and severity of the health issues,[4] including the Governing Council of the Cat Fancy (GCCF).[5]
         
         The name "munchkin" derives from writer L. Frank Baum's diminutive inhabitants of Munchkin Country, originating in the 1900 novel, The Wonderful Wizard of Oz.
-    </p>
+            </p>
+        </div>
+    </div>    
 </body>
 </html>
